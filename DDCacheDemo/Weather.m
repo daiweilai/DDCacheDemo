@@ -63,16 +63,19 @@
     NSString* cacheName = [NSString stringWithFormat:@"%@%@",[URL stringByReplacingOccurrencesOfString:@"/" withString:@"_"],name];
     cacheName = [cacheName stringByReplacingOccurrencesOfString:@":" withString:@""];
     
+    
     if (bol) {//不从缓存恢复 立即更新！
         __block Weather* wea = [Weather new];
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         [manager POST:@"http://api.36wu.com/Weather/GetWeather" parameters:@{@"district":name,@"format":@"json"} success:^(AFHTTPRequestOperation *operation, id responseObject){
             if ([[responseObject valueForKeyPath:@"status"]  isEqual: @200]) {
+                //强大的MJExtension！！一句话完成JSON和对象的映射，还很安全~~~~ 实在是棒棒哒
                 wea = [Weather objectWithKeyValues:[responseObject valueForKeyPath:@"data"]];
+                //设定这个对象缓存的一些信息
                 wea.updateTime = [NSDate new];
                 wea.cacheDurationTime = 3600;
                 wea.needToCache = YES;
-                [Tools archiverToTempWithFileName:cacheName Obj:wea];
+                [Tools archiverToTempWithFileName:cacheName Obj:wea];//进行缓存成文件保存本地
                 returnBlock(wea,nil);
             }
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

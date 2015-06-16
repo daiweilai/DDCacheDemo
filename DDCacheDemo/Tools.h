@@ -9,15 +9,27 @@
 #import <Foundation/Foundation.h>
 
 @interface Tools : NSObject
-+ (BOOL)isFileExistWithFileName:(NSString*)filename;
-+(void)archiverToTempWithFileName:(NSString*)filename Obj:(id)obj;
-+(id)unarchiverFromTempWithFileName:(NSString*)filename;
 /**
- *  字典转Json
+ *  判断文件是否存在
  *
- *  @param dic 字典
+ *  @param filename 文件名称
  *
- *  @return json string
+ *  @return
  */
-+ (NSString*)dictionaryToJson:(NSDictionary *)dic;
++ (BOOL)isFileExistWithFileName:(NSString*)filename;
+/**
+ *  缓存对象
+ *
+ *  @param filename 缓存文件的名称
+ *  @param obj      需要进行缓存的对象
+ */
++(void)archiverToTempWithFileName:(NSString*)filename Obj:(id)obj;
+/**
+ *  从缓存中恢复对象
+ *
+ *  @param filename 缓存文件的名称
+ *
+ *  @return 从缓存恢复的对象
+ */
++(id)unarchiverFromTempWithFileName:(NSString*)filename;
 @end

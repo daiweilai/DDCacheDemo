@@ -34,7 +34,6 @@
 		A50C2AB81B2FF314003F11B3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C2AB71B2FF314003F11B3 /* Tools.m */; };
 		A50C2ABB1B2FF4F1003F11B3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C2ABA1B2FF4F1003F11B3 /* BaseModel.m */; };
 		A50C2ABE1B2FF5B4003F11B3 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C2ABD1B2FF5B4003F11B3 /* Weather.m */; };
-		A50C2AC11B2FF7CF003F11B3 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = A50C2AC01B2FF7CF003F11B3 /* Request.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +102,6 @@
 		A50C2ABA1B2FF4F1003F11B3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		A50C2ABC1B2FF5B4003F11B3 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		A50C2ABD1B2FF5B4003F11B3 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
-		A50C2ABF1B2FF7CF003F11B3 /* Request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
-		A50C2AC01B2FF7CF003F11B3 /* Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,9 +147,7 @@
 				A50C2A7D1B2FF002003F11B3 /* Helpers */,
 				A50C2A7C1B2FEFF3003F11B3 /* Resources */,
 				A50C2A7B1B2FEFEB003F11B3 /* Models */,
-				A50C2A7A1B2FEFE4003F11B3 /* Views */,
 				A50C2A791B2FEFDC003F11B3 /* Controllers */,
-				A50C2A781B2FEFC9003F11B3 /* Base */,
 				A50C2A521B2FEFAC003F11B3 /* Supporting Files */,
 			);
 			path = DDCacheDemo;
@@ -184,13 +179,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A50C2A781B2FEFC9003F11B3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
 		A50C2A791B2FEFDC003F11B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,13 +186,6 @@
 				A50C2A5A1B2FEFAC003F11B3 /* ViewController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		A50C2A7A1B2FEFE4003F11B3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		A50C2A7B1B2FEFEB003F11B3 /* Models */ = {
@@ -235,8 +216,6 @@
 			children = (
 				A50C2AB61B2FF314003F11B3 /* Tools.h */,
 				A50C2AB71B2FF314003F11B3 /* Tools.m */,
-				A50C2ABF1B2FF7CF003F11B3 /* Request.h */,
-				A50C2AC01B2FF7CF003F11B3 /* Request.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -405,7 +384,6 @@
 				A50C2A5B1B2FEFAC003F11B3 /* ViewController.m in Sources */,
 				A50C2A981B2FF100003F11B3 /* NSString+MJExtension.m in Sources */,
 				A50C2A931B2FF100003F11B3 /* MJProperty.m in Sources */,
-				A50C2AC11B2FF7CF003F11B3 /* Request.m in Sources */,
 				A50C2A581B2FEFAC003F11B3 /* AppDelegate.m in Sources */,
 				A50C2AB51B2FF119003F11B3 /* AFURLSessionManager.m in Sources */,
 				A50C2AAF1B2FF119003F11B3 /* AFHTTPSessionManager.m in Sources */,
@@ -618,6 +596,7 @@
 				A50C2A741B2FEFAC003F11B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50C2A751B2FEFAC003F11B3 /* Build configuration list for PBXNativeTarget "DDCacheDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +605,7 @@
 				A50C2A771B2FEFAC003F11B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
