@@ -143,7 +143,7 @@
 		A50C2A511B2FEFAC003F11B3 /* DDCacheDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A50C2A7E1B2FF0C0003F11B3 /* Third */,
+				A50C2A7E1B2FF0C0003F11B3 /* vender */,
 				A50C2A7D1B2FF002003F11B3 /* Helpers */,
 				A50C2A7C1B2FEFF3003F11B3 /* Resources */,
 				A50C2A7B1B2FEFEB003F11B3 /* Models */,
@@ -220,13 +220,13 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		A50C2A7E1B2FF0C0003F11B3 /* Third */ = {
+		A50C2A7E1B2FF0C0003F11B3 /* vender */ = {
 			isa = PBXGroup;
 			children = (
 				A50C2A991B2FF107003F11B3 /* AFNetworking */,
 				A50C2A7F1B2FF0EB003F11B3 /* MJExtension */,
 			);
-			name = Third;
+			name = vender;
 			sourceTree = "<group>";
 		};
 		A50C2A7F1B2FF0EB003F11B3 /* MJExtension */ = {
